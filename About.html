@@ -1,69 +1,87 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>हमारे बारे में - WOW Idli</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fffaf0;
-        }
-        header {
-            background-color: #ff5722;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #ffc107;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #ff5722;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to WOW Idli</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+    }
+
+    header {
+      background-color: #ff5722;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ffc107;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 12px 0;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #333;
+    }
+
+    .footer {
+      background-color: #ff5722;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>हमारे बारे में</h1>
-    </header>
 
-    <nav>
-        <a href="index.html">मुखपृष्ठ</a>
-        <a href="about.html">हमारे बारे में</a>
-        <a href="#">मेन्यू</a>
-        <a href="#">संपर्क करें</a>
-    </nav>
+  <header>
+    <h1>Welcome to WOW Idli!</h1>
+    <p>The perfect blend of taste and health</p>
+  </header>
 
-    <main>
-        <h2>WOW Idli की शुरुआत</h2>
-        <p>WOW Idli की स्थापना स्वाद, गुणवत्ता और सेहत को ध्यान में रखकर की गई। हमारा उद्देश्य है लोगों को पारंपरिक इडली को नए स्वाद और अंदाज़ में परोसना।</p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-        <h3>हमारी टीम</h3>
-        <p>हमारी टीम में अनुभवी शेफ, पोषण विशेषज्ञ और ग्राहकों की सेवा में समर्पित लोग हैं।</p>
-    </main>
+  <section id="home" class="section">
+    <h2>Our Specialty</h2>
+    <p>WOW Idli serves you hot, soft, and healthy idlis loved by people of all ages!</p>
+  </section>
 
-    <footer>
-        &copy; 2025 WOW Idli | सभी अधिकार सुरक्षित
-    </footer>
-</body>
-</html>
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>We are committed to bringing you delicious and nutritious
